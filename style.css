@@ -1,30 +1,39 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+html,body{
+    background-color: yellowgreen;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 html{
-    background-color: #ffc600;
     font-size: 10px;
 }
 
 .container{
     background: white;
     width: 100vw;
-    margin: 2rem auto;
+    margin: 0rem auto;
     border-radius: 2px;
+    background-color: rgb(17, 39, 165);
+
 }
 
 .photo{
     /* margin-left: 100px; */
-    width: 100%;
+    width: 60%;
 }
 
 .player{
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 300px;
+    top: 5px;
+    right: 5px;
+    width: 400px;
 }
 
 .strip{
@@ -45,3 +54,26 @@ html{
 .strip a:nth-child(5n+3) img { transform: rotate(8deg); }
 .strip a:nth-child(5n+4) img { transform: rotate(-11deg); }
 .strip a:nth-child(5n+5) img { transform: rotate(12deg); }
+
+.controls{
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    background-color: khaki;
+}
+
+.controls>*{
+    margin: 0 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+button{
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: khaki;
+    top: 70%;
+    right: 20%;
+}
